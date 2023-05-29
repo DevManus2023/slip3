@@ -1,0 +1,17 @@
+func close_10(_ a: Int, _ b: Int) -> Int {
+    if abs(10 - b) > abs(10 - a) 
+    {
+        return a
+    }
+    else if abs(10 - b) < abs(10 - a) 
+    {
+        return b
+    } 
+    else 
+    {
+        return 0
+    }
+}
+print(close_10(8, 13))
+print(close_10(12, 7))
+print(close_10(14, 6))
