@@ -15,7 +15,7 @@ printf("I-node number: %ld\n", (long) info.st_ino);
 printf("File size: %lld bytes\n",(long long) info.st_size);
 printf("Last file access: %s", ctime(&info.st_atime));
 printf("Last file modification: %s", ctime(&info.st_mtime));
-printf("No of hard links: %d\n",info.st_nlink);
+printf("No of hard links: %ld\n",info.st_nlink);
 printf("File Permissions: \t");
 printf( (info.st_mode & S_IRUSR) ? "r" : "-");
 printf( (info.st_mode & S_IWUSR) ? "w" : "-");
